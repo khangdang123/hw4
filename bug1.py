@@ -1,8 +1,11 @@
 class Base:
-# TODO: there's code missing in one or more lines below
+    def __init__(self,x,y,size):
+        self.x = x
+        self.y = y
+        self.size = size
 
-class Circle():
-    def __init__(x, size):
+class Circle(Base):
+    def __init__(self, x,y,size):
         super().__init__(x, y, size)
 
     def draw(self):
@@ -20,3 +23,10 @@ class Circle():
      ,                  , '
        ' - , _ _ _ ,  '
                """
+
+
+def main():
+    c = Circle(1,2,3)
+    print(c.draw())
+    
+main()
