@@ -1,6 +1,6 @@
 def my_steps(n):
   if n < 1 or n > 25:
-        raise Error("Out of bounds.")
+        raise ValueError("Out of bounds.")
     
   def count_ways(n):
     if n <= 1:
