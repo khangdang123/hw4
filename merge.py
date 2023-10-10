@@ -1,7 +1,7 @@
 def merge_list(list1, list2):
     
     for item in list1 + list2:
-        if not isinstance(item, (int, float)):
+        if not isinstance(item, int):
             raise TypeError("Both lists must contain only integers")
         
     mergeList = list1 + list2
